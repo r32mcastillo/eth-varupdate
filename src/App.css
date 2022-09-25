@@ -1,38 +1,111 @@
-.App {
+body {
+  margin: 0;
+}
+
+.contenedor {
+  background-color: white;
+  display: grid;
+  grid-template-areas:
+      "header header header"
+      "section section aside"
+      "section section aside"
+      "gallery gallery gallery"
+      "footer footer footer";
+  /*  place-content: center; */
+  min-height: 100vh;
+}
+
+.item {
+}
+
+header {
+  grid-area: header;
+}
+
+.gallery {
+  grid-area: gallery;
+}
+
+section {
+  grid-area: section;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.main-footer {
+  background-color: black;
+  color: #fff;
+  font-size: large;
+  font-family: monospace;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.main-footer>div {
+  align-self: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-footer>div:last-child {
+  align-self: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-footer a,
+.main-footer a:link,
+.main-footer a:visited,
+.main-footer a:hover,
+.main-footer a:active {
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-header {
+  font-size: large;
+  font-family: monospace;
+  display: grid;
+  grid-template-columns: min-content min-content 1fr;
+  border-bottom: solid 2px;
+  margin-bottom: 15px;    
+  height: fit-content;
 }
 
-.App-link {
-  color: #61dafb;
+.main-header>div {
+  align-self: center;
 }
+.main-header>div:last-child {
+  align-self: right;
+  text-align: right;
+  padding-right: 15px;
+}
+.main-header a,
+.main-header a:link,
+.main-header a:visited,
+.main-header a:hover,
+.main-header a:active{
+  color: black;
+  padding: 5px;
+}
+.main-header a:hover{
+  border-radius: 8px;
+  border: solid black 2px;
+}
+.contenedor2{
+  display: grid;
+  /*265*/
+  grid-template-columns: repeat(auto-fill,minmax(265px,270px));
+  justify-content:center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.item2 {
+  margin: 5px;
+  border: solid #ccc;
+}
+.msg{
+  text-align: left;
+  padding: 30px;
 }
