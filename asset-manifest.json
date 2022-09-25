@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eth-varupdate/static/css/main.63be3c3c.css",
+    "main.js": "/eth-varupdate/static/js/main.fc084512.js",
+    "index.html": "/eth-varupdate/index.html",
+    "main.63be3c3c.css.map": "/eth-varupdate/static/css/main.63be3c3c.css.map",
+    "main.fc084512.js.map": "/eth-varupdate/static/js/main.fc084512.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63be3c3c.css",
+    "static/js/main.fc084512.js"
+  ]
+}
